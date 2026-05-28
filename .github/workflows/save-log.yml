@@ -1,0 +1,39 @@
+name: Save Daily English Log
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Log date (YYYY-MM-DD)'
+        required: true
+        type: string
+      content:
+        description: 'Markdown content for the log file (base64 encoded)'
+        required: true
+        type: string
+
+jobs:
+  save-log:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Decode and write log file
+        run: |
+          mkdir -p logs
+          echo "${{ github.event.inputs.content }}" | base64 --decode > logs/${{ github.event.inputs.date }}.md
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push
+        run: |
+          git add logs/${{ github.event.inputs.date }}.md
+          git diff --staged --quiet || git commit -m "📚 Add English log: ${{ github.event.inputs.date }}"
+          git push
