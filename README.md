@@ -12,12 +12,13 @@
 
 ## 進捗
 
-<!-- 自動更新 -->
 - 開始日：2026-05-29
-- 累計セッション数：![sessions](https://img.shields.io/badge/sessions-1-blue)
+- 累計セッション数：2
 
 ## ログ一覧
 
 | 日付 | テーマ | 評価 |
 |------|--------|------|
+| [2026-05-30](logs/2026-05-30.md) | VR / Experiential Learning | Translation: B+ / Response: B |
 | [2026-05-29](logs/2026-05-29.md) | Community Resilience | Translation: A / Response: B+ |
+
