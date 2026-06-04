@@ -13,12 +13,13 @@
 ## 進捗
 
 - 開始日：2026-05-29
-- 累計セッション数：3
+- 累計セッション数：4
 
 ## ログ一覧
 
 | 日付 | テーマ | 評価 |
 |------|--------|------|
+| [2026-06-04](logs/2026-06-04.md) | Community Organising / Disaster Education | Translation: A- / Response: B+ |
 | [2026-06-01](logs/2026-06-01.md) | Risk Perception / Disaster Preparedness | Translation: B / Response: B |
 | [2026-05-30](logs/2026-05-30.md) | VR / Experiential Learning | Translation: B+ / Response: B |
 | [2026-05-29](logs/2026-05-29.md) | Community Resilience | Translation: A / Response: B+ |
